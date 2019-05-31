@@ -5,6 +5,7 @@ from random import randint
 import adafruit_esp32spi.adafruit_esp32spi_requests as requests
 from adafruit_pyportal import PyPortal
 from analogio import AnalogIn
+from secrets import secrets
 
 print("PyPortal METAR System Restarting...")
 
@@ -13,7 +14,7 @@ print("PyPortal METAR System Restarting...")
 airport_icao = 'kash'
 checkwx_metar_url = "https://api.checkwx.com/metar/{0}/decoded".format(airport_icao)
 checkwx_metar_api_key = secrets['checkwx_token']
-checkwx_header = {'X-API-Key': check_wx_metar_api_key}
+checkwx_header = {'X-API-Key': checkwx_metar_api_key}
 # JSON Fields to get from URL
 raw_metar_text = ['data',0,'raw_text']
 station_id = ['data',0,'icao']
