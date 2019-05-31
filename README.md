@@ -13,8 +13,11 @@ and your secrets.py file configured with:
 ## code.py
 Main code which auto-executes.  Set your local airfield ICAO in here.
 
-## /images
+## images.zip
 Zip file of .bmp images used by the app.  Unzip content into /images
+
+## sounds.zip
+Zip file of .wav files used by the app.  ST:TNG sound effects from: http://www.lcarscom.net/sounds.htm
 
 ## Future features underway:
 
